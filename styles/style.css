@@ -1,4 +1,10 @@
-body {
-  background: blue;
+* {
+  box-sizing: border-box; }
 
-}
+body {
+  background: #fff; }
+
+header {
+  background: url(../assets/header.jpg) no-repeat center center transparent;
+  background-size: cover;
+  height: 525px; }
