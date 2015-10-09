@@ -4,6 +4,7 @@
 body {
   background: #fff; }
 
+/*HEADER*/
 header {
   background: url(../assets/header.jpg) no-repeat center center transparent;
   background-size: cover;
@@ -50,3 +51,67 @@ h1 {
 header p {
   text-align: center;
   margin: 0 auto; }
+
+/*     Main    */
+main {
+  margin-left: 10%;
+  margin-top: 7%;
+  margin: 10%; }
+
+h2 {
+  color: #083451;
+  font-size: 56px;
+  margin: 0 auto; }
+
+.meta {
+  margin-bottom: 20px; }
+
+.meta div {
+  padding: 10px 0 0 0;
+  display: inline-block;
+  color: #BAC6CF; }
+
+.meta .screenName {
+  margin-left: 5px;
+  color: #083451;
+  font-weight: bold; }
+
+.meta img {
+  background: #083451;
+  border: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px; }
+
+main p {
+  margin: 0 auto 0 20px 0; }
+
+.quote {
+  padding-left: 20px;
+  height: 56px;
+  border-left: 3px solid #BAC6CF;
+  color: #106DB3;
+  font-size: 25px;
+  font-weight: lighter; }
+
+.quote p {
+  padding-top: 14px; }
+
+aside {
+  float: right; }
+
+.socialButton {
+  color: #5E686F; }
+
+.readComments {
+  height: 30px;
+  width: 158px; }
+
+.readLater {
+  height: 30px;
+  width: 130px; }
+
+.shareThisPost {
+  height: 30px;
+  width: 158px; }

@@ -1,4 +1,13 @@
 
+$mainFontColor: #083451;
+$mainGray: #BAC6CF;
+
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,11 +16,13 @@ body {
   background: #fff;
 }
 
+/*HEADER*/
+
 header {
   background: url(../assets/header.jpg) no-repeat center center transparent;
   background-size: cover;
   height: 525px;
-  color: #083451;
+  color: $mainFontColor;
 }
 
 li {
@@ -58,7 +69,85 @@ h1 {
   padding-top: 225px;
   margin: 0 auto;
 }
+
 header p {
   text-align: center;
   margin: 0 auto;
+}
+
+/*     Main    */
+
+main {
+  margin-left: 10%;
+  margin-top: 7%;
+  margin: 10%;
+}
+
+h2 {
+  color: $mainFontColor;
+  font-size: 56px;
+  margin: 0 auto;
+}
+
+.meta {
+  margin-bottom: 20px;
+}
+
+.meta div {
+  padding: 10px 0 0 0;
+  display: inline-block;
+  color: $mainGray;
+}
+
+.meta .screenName {
+  margin-left: 5px;
+  color: $mainFontColor;
+  font-weight: bold;
+}
+
+.meta img {
+ background: $mainFontColor;
+ border: none;
+ display: inline-block;
+ @include circle(25px);
+}
+
+main p {
+  margin: 0 auto 0 20px 0;
+}
+
+.quote {
+  padding-left: 20px;
+  height: 56px;
+  border-left: 3px solid $mainGray;
+  color: #106DB3;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.quote p {
+  padding-top: 14px;
+}
+
+aside {
+float: right;
+}
+
+.socialButton {
+  color: #5E686F;
+}
+
+.readComments{
+  height: 30px;
+  width: 158px;
+}
+
+.readLater{
+  height: 30px;
+  width: 130px;
+}
+
+.shareThisPost{
+  height: 30px;
+  width: 158px;
 }
