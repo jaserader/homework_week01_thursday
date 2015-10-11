@@ -7,10 +7,22 @@ body {
 
 /*HEADER*/
 header {
-  background: url(../assets/header.jpg) no-repeat center center transparent;
+  background: url(../assets/first_background.png) no-repeat center center transparent;
   background-size: cover;
   height: 525px;
-  color: #083451; }
+  color: #083451;
+  position: relative; }
+
+header p {
+  color: #fff; }
+
+.headerLayer {
+  background-color: rgba(0, 102, 204, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 li {
   list-style-type: none; }
@@ -23,8 +35,8 @@ li {
   margin-left: 140px; }
 
 .logo div {
-  margin-top: 25px;
-  margin-left: 5px; }
+  padding-top: 25px;
+  padding-left: 5px; }
 
 .headerNav {
   float: right;
@@ -55,7 +67,8 @@ header p {
 
 /*     Main    */
 main {
-  overflow: auto; }
+  overflow: auto;
+  margin-bottom: 60px; }
 
 h2 {
   color: #083451;
@@ -84,7 +97,7 @@ h2 {
   border-radius: 12.5px; }
 
 article {
-  margin-left: 30px;
+  margin-left: 10%;
   margin-top: 15px;
   color: #5E686F;
   width: 640px;
@@ -96,7 +109,7 @@ article {
   border-left: 3px solid #BAC6CF;
   color: #106DB3;
   font-size: 25px;
-  font-weight: lighter; }
+  font-weight: bold; }
 
 .quote p {
   padding-top: 14px; }
@@ -104,8 +117,13 @@ article {
 aside {
   float: right;
   width: 260px;
-  margin-right: 30px;
-  margin-top: 20px; }
+  margin-right: 140px;
+  margin-top: 40px; }
+
+aside a {
+  padding-left: 185px;
+  font-size: 15px;
+  color: #BAC6CF; }
 
 .socialButton {
   color: #5E686F; }
@@ -122,17 +140,70 @@ aside {
   height: 30px;
   width: 158px; }
 
+.userBlock {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto; }
+
+.largeProfile {
+  margin-bottom: 30px; }
+
 .largeProfile img {
   width: 85px;
   height: 85px;
-  border-radius: 42.5px; }
+  border-radius: 42.5px;
+  margin-left: 30%; }
 
-.largeProfile div {
+.name {
+  padding-top: 90px;
+  padding-left: 30%;
   color: #083451;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block; }
+  font-size: 24px;
+  font-weight: bold; }
+
+.userProfile {
+  display: block;
+  height: 30px;
+  padding-left: 1%;
+  padding-bottom: 30px; }
+
+.userProfile div {
+  float: left;
+  color: #BAC6CF; }
+
+.twitter {
+  padding-right: 4px; }
+
+.facebook {
+  border-left: 1px solid #BAC6CF;
+  padding: 0 4px 0 4px;
+  margin-left: 4px; }
+
+.instagram {
+  border-left: 1px solid #BAC6CF;
+  padding: 0 4px 0 4px;
+  margin-left: 4px; }
+
+.adImage img {
+  height: 300px;
+  width: 280px;
+  background: blue;
+  position: relative; }
+
+.adImageLayer {
+  background-color: rgba(0, 102, 204, 0.3);
+  position: absolute;
+  width: 280px;
+  height: 300px; }
+
+h3 {
+  color: #106DB3;
+  font-size: 20px;
+  font-weight: bolder; }
+
+.sideBlurb {
+  color: #BAC6CF; }
 
 footer {
-  height: 500px;
-  background: yellow; }
+  border-top: 1px #BAC6CF solid;
+  height: 500px; }
