@@ -10,7 +10,7 @@ $mainGray: #BAC6CF;
 
 * {
   box-sizing: border-box;
-  font-family: 'Oswald'
+  font-family: 'Oswald';
 }
 
 body {
@@ -25,6 +25,7 @@ header {
   height: 525px;
   color: $mainFontColor;
   position: relative;
+  z-index: 1;
 }
 
 header p {
@@ -32,13 +33,16 @@ header p {
 }
 
 .headerLayer {
-    background-color: rgba(0, 102, 204,0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+   z-index: 2;
+   background-color: #106DB3 ;
+   opacity: 0.7;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   bottom: 0;
 }
+
+.top
 
 li {
    list-style-type: none;
@@ -83,6 +87,7 @@ h1 {
   text-align: center;
   padding-top: 225px;
   margin: 0 auto;
+  z-index: 3;
 }
 
 header p {
@@ -132,7 +137,7 @@ article {
   margin-left: 10%;
   margin-top: 15px;
   color: #5E686F;
-  width: 640px;
+  width: 615px;
   float: left;
 }
 
@@ -151,34 +156,76 @@ article {
 
 aside {
   float: right;
-  width: 260px;
+  width: 278px;
   margin-right: 140px;
   margin-top: 40px;
 }
 
 aside a {
-  padding-left: 185px;
+  padding-left: 207px;
   font-size: 15px;
   color: $mainGray;
 }
 
-.socialButton {
-  color: #5E686F;
+.socialButton div {
+  color: #fff;
+  float: left;
+
 }
 
 .readComments{
+  background: #5E686F;
   height: 30px;
   width: 158px;
+  margin-left: 15px;
+}
+
+.readComments img,
+.readLater img,
+.shareThisPost img {
+  margin-left: 5px;
+  padding-top: 7px;
+}
+
+.readComments div {
+  background: #A3B3BF;
+  height: 30px;
+  width: 125px;
+  margin-left: 12px;
+  padding-left: 20px;
+  padding-top: 2px;
 }
 
 .readLater{
+  background: #5E686F;
   height: 30px;
   width: 130px;
+  margin-left: 15px;
+}
+
+.readLater div {
+  background: #A3B3BF;
+  height: 30px;
+  width: 96px;
+  margin-left: 13px;
+  padding-left: 20px;
+  padding-top: 2px;
 }
 
 .shareThisPost{
+  background: #083452;
   height: 30px;
   width: 158px;
+  margin-left: 15px;
+}
+
+.shareThisPost div {
+  background: #106DB3;
+  height: 30px;
+  width: 125px;
+  margin-left: 13px;
+  padding-left: 20px;
+  padding-top: 2px;
 }
 
 .userBlock {
@@ -193,12 +240,20 @@ aside a {
 
 .largeProfile img {
   @include circle(85px);
-  margin-left: 30%;
+  margin-left: 36.5%;
+  position: relative;
+}
+
+.largeProfileLayer {
+  background-color: rgba(0, 102, 204, 0.3);
+  position: absolute;
+  @include circle(85px);
+  margin-left: 92px;
 }
 
 .name {
   padding-top: 90px;
-  padding-left: 30%;
+  padding-left: 36%;
   color: $mainFontColor;
   font-size: 24px;
   font-weight: bold;
@@ -206,9 +261,9 @@ aside a {
 
 .userProfile {
   display: block;
-  height: 30px;
-  padding-left: 1%;
-  padding-bottom: 30px;
+  height: 60px;
+  padding-left: 4.5%;
+  padding-bottom: 50px;
 }
 
 .userProfile div {
@@ -222,7 +277,7 @@ aside a {
 
 .facebook {
   border-left: 1px solid $mainGray;
-  padding:  0 4px 0 4px;
+  padding:  0 4px 0 6px;
   margin-left: 4px;
 }
 
@@ -234,7 +289,7 @@ aside a {
 
 .adImage img {
   height: 300px;
-  width: 280px;
+  width: 278px;
   background: blue;
   position: relative;
 }
@@ -242,7 +297,7 @@ aside a {
 .adImageLayer {
     background-color: rgba(0, 102, 204,0.3);
     position: absolute;
-    width: 280px;
+    width: 278px;
     height: 300px;
 }
 
@@ -259,4 +314,106 @@ h3 {
 footer {
   border-top: 1px $mainGray solid;
   height: 500px;
+  margin-left: 10px;
+}
+
+footer h4 {
+  font-size: 56px;
+  color: $mainFontColor;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.footerImages {
+  background: blue;
+  font-size: 25px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.footerImages div {
+  width: 24vw;
+  height: 24vw;
+  float: left;
+}
+
+
+.footer1 {
+  background: url(../assets/img_1.png) no-repeat center center transparent;
+  height: 330px;
+  width: 325px;
+  padding-top: 240px;
+  padding-left: 5px;
+}
+
+.footer2 {
+  background: url(../assets/img_2.png) no-repeat center center transparent;
+  height: 330px;
+  width: 325px;
+  padding-top: 240px;
+  padding-left: 5px;
+}
+
+.footer3 {
+  background: url(../assets/img_3.png) no-repeat center center transparent;
+  height: 330px;
+  width: 325px;
+  padding-top: 240px;
+  padding-left: 5px;
+}
+
+.footer4 {
+  background: url(../assets/img_0648.png) no-repeat center center transparent;
+  height: 330px;
+  width: 325px;
+  padding-top: 240px;
+  padding-left: 5px;
+}
+
+.lowerNav {
+  height: 100px;
+  width: 1217px;
+  background: #083452;
+  display: inline-block;
+}
+
+.lowerNav img {
+  padding-left: 165px;
+  padding-top: 25px;
+}
+
+.copyright {
+  color: #A3B3BF;
+  padding-left: 230px;
+  padding-top: 34px;
+  width: 500px;
+}
+
+.footerNav div{
+  float: left;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.a {
+  padding-right: 10px;
+}
+
+.b,
+.c,
+.d {
+  border-left: 1px $mainGray solid;
+  padding-right: 10px;
+}
+
+.footerNav {
+  padding-left: 800px;
+  padding-bottom: 40px;
+}
+
+.footerNav {
+  color: #A3B3BF;
 }
